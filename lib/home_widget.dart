@@ -23,7 +23,13 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        leading: Icon(Icons.copyright, color: Colors.black,),
+        leading: IconButton(
+          icon: Icon(Icons.copyright, color: Colors.black,),
+          tooltip: 'Copyright',
+          onPressed: () {
+            CupertinoPopupSurface(child: Text("Hello"),);
+          },
+        ),
         //title: Text('armywatch'),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
