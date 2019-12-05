@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'solo_widget.dart';
+import 'discover_widget.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,8 +15,8 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
 
   final List<Widget> _children = [
-    SoloWidget(Colors.white),
-    SoloWidget(Colors.white10),
+    SoloWidget(),
+    DiscoverWidget(),
   ];
 
   @override
